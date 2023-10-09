@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "808675623029",
+    "project_id": "fiveflutterauthdb",
+    "storage_bucket": "fiveflutterauthdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:808675623029:android:cac7fee65edb360cf5f83c",
+        "android_client_info": {
+          "package_name": "com.example.five_flutter_auth_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHtxwxg1HBC-zszQc9PlnK6Rb6SgIR-CY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
