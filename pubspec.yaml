@@ -11,14 +11,32 @@ dependencies:
     sdk: flutter
   get: ^4.6.6
   firebase_core: ^2.17.0
+  firebase_auth: ^4.10.1
+  google_sign_in: ^6.1.5
   google_fonts: ^6.1.0
   flutter_native_splash: ^2.3.3
+  video_player: ^2.7.2
+  flutter_svg: ^2.0.7
   
-
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
 
+
 flutter:
   uses-material-design: true
+  assets:
+    - assets/video/promo.mp4
+    - assets/icons/download.svg
+
+  fonts:
+    - family: Gilroy
+      fonts:
+        - asset: fonts/Gilroy-Regular.ttf
+          weight: 400
+        - asset: fonts/Gilroy-Bold.ttf
+          weight: 700
+        - asset: fonts/Gilroy-Black.ttf
+          weight: 900
+
