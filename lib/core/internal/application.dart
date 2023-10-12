@@ -6,20 +6,22 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 
+import 'internal_exports.dart';
+
 class Application extends StatelessWidget {
   const Application({super.key});
 
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-        title: 'Five Authentications App',
+        title: 'Authentications App',
         debugShowCheckedModeBanner: false,
         initialBinding: GetXBindings(),
-        initialRoute: '/splash',
+        initialRoute: AppRouts.splash,
         getPages: [
-          GetPage(name: '/splash', page: () => const SplashScreen()),
-          GetPage(name: '/signin', page: () => const SignInScreen()),
-          GetPage(name: '/home', page: () => const HomeScreen()),
+          GetPage(name: AppRouts.splash, page: () => const SplashScreen()),
+          GetPage(name: AppRouts.signIn, page: () => const SignInScreen()),
+          GetPage(name: AppRouts.home, page: () => const HomeScreen()),
         ]);
   }
 }

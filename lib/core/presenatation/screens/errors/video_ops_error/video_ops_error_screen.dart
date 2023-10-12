@@ -1,6 +1,8 @@
-import 'package:five_flutter_auth_app/core/presenatation/widgets/error_text/error_text.dart';
+import 'package:five_flutter_auth_app/core/internal/internal_exports.dart';
+import 'package:five_flutter_auth_app/core/presenatation/presentation_exports.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:get/get.dart';
 
 class VideoErrorOpsScreen extends StatelessWidget {
   const VideoErrorOpsScreen({super.key});
@@ -17,31 +19,33 @@ class VideoErrorOpsScreen extends StatelessWidget {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(25.0),
           ),
-          color: const Color(0xFF262626),
+          color: AppColors.errorBackground,
           elevation: 5,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SvgPicture.asset(
-                'assets/icons/download.svg',
+                AppAssetsImg.errorImgSplash,
                 fit: BoxFit.fitWidth,
                 width: MediaQuery.of(context).size.width * 0.5,
               ),
-              const Padding(
-                padding: EdgeInsets.only(top: 20),
-                child: ErrorText(
-                    text: 'Oops!',
-                    fontSize: 40,
-                    fontWeight: FontWeight.w900,
-                    color: Colors.white),
+              Padding(
+                padding: const EdgeInsets.only(top: 20),
+                child: Text('Ops!',
+                    style: AppTextStyle.headerError
+                        .copyWith(color: AppColors.errorText)),
               ),
-              const Padding(
-                padding: EdgeInsets.fromLTRB(30, 20, 30, 0),
-                child: ErrorText(
-                    text: 'Something went wrong with the video',
-                    fontSize: 16,
-                    fontWeight: FontWeight.normal,
-                    color: Colors.white),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(30, 20, 30, 0),
+                child: Text('Something went wrong with video player',
+                    style: AppTextStyle.labelError
+                        .copyWith(color: AppColors.errorLabelDark)),
+              ),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(30, 20, 30, 0),
+                child: AppButton.rounded(
+                    onPressed: () => Get.offAndToNamed(AppRouts.signIn),
+                    child: AppText.errorOnButton(text: 'Next')),
               ),
             ],
           ),

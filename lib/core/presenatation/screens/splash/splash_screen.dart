@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'widgets/splash_video.dart';
+import '../../../internal/internal_exports.dart';
+
+import 'splash_exports.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
@@ -8,7 +10,6 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-        backgroundColor: Color(0xFF1D1D1D),
-        body: SplashVideo(videoSource: 'assets/video/promo.mp4'));
+        backgroundColor: AppColors.primaryBackground, body: SplashVideo());
   }
 }

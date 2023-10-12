@@ -29,14 +29,34 @@ flutter:
   assets:
     - assets/video/promo.mp4
     - assets/icons/download.svg
+    - assets/icons/arrow_right.svg
+    - assets/icons/mail.svg
+    - assets/icons/facebook.svg
+    - assets/icons/apple.svg
+    - assets/icons/google.svg
+    - assets/icons/eye.svg
+    - assets/icons/password.svg
+    - assets/icons/user.svg
 
   fonts:
     - family: Gilroy
       fonts:
-        - asset: fonts/Gilroy-Regular.ttf
+        - asset: fonts/Gilroy/Gilroy-Regular.ttf
           weight: 400
-        - asset: fonts/Gilroy-Bold.ttf
+        - asset: fonts/Gilroy/Gilroy-Medium.ttf
+          weight: 500
+        - asset: fonts/Gilroy/Gilroy-Bold.ttf
           weight: 700
-        - asset: fonts/Gilroy-Black.ttf
+        - asset: fonts/Gilroy/Gilroy-Black.ttf
+          weight: 900
+    - family: Poppins
+      fonts:
+        - asset: fonts/Poppins/Poppins-Regular.ttf
+          weight: 400
+        - asset: fonts/Poppins/Poppins-Medium.ttf
+          weight: 500
+        - asset: fonts/Poppins/Poppins-Bold.ttf
+          weight: 700
+        - asset: fonts/Poppins/Poppins-Black.ttf
           weight: 900
 
