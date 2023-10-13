@@ -9,6 +9,8 @@ abstract class AppTextStyle {
       fontSize: AppFontSize.headerText,
       fontWeight: AppFontWeight.black,
       fontFamily: AppFontFamily.gilroy);
+  static const headerError = headerText;
+
   static const buttonText = TextStyle(
       fontSize: AppFontSize.buttonText,
       fontWeight: AppFontWeight.bold,
@@ -21,12 +23,11 @@ abstract class AppTextStyle {
       fontSize: AppFontSize.labelText,
       fontWeight: AppFontWeight.medium,
       fontFamily: AppFontFamily.poppins);
-  static const headerError = TextStyle(
-      fontSize: AppFontSize.headerText,
-      fontWeight: AppFontWeight.black,
-      fontFamily: AppFontFamily.gilroy);
-  static const labelError = TextStyle(
+
+  static const labelError = labelText;
+
+  static const labelTextRegularPopinns = TextStyle(
       fontSize: AppFontSize.labelText,
-      fontWeight: AppFontWeight.medium,
+      fontWeight: AppFontWeight.regular,
       fontFamily: AppFontFamily.poppins);
 }

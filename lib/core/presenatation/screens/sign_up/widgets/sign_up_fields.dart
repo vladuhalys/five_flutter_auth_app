@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 
 import '../../../presentation_exports.dart';
 
-class SignInFields extends StatelessWidget {
-  const SignInFields({super.key});
+class SignUpFields extends StatelessWidget {
+  const SignUpFields({super.key});
 
   @override
   Widget build(BuildContext context) {

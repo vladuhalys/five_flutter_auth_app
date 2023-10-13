@@ -1,6 +1,7 @@
 import 'package:five_flutter_auth_app/core/internal/util/bindings/bindings_getx.dart';
 import 'package:five_flutter_auth_app/core/presenatation/screens/home/home.dart';
 import 'package:five_flutter_auth_app/core/presenatation/screens/sign_in/sign_in_screen.dart';
+import 'package:five_flutter_auth_app/core/presenatation/screens/sign_up/sign_up_screen.dart';
 import 'package:five_flutter_auth_app/core/presenatation/screens/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -21,6 +22,7 @@ class Application extends StatelessWidget {
         getPages: [
           GetPage(name: AppRouts.splash, page: () => const SplashScreen()),
           GetPage(name: AppRouts.signIn, page: () => const SignInScreen()),
+          GetPage(name: AppRouts.signUp, page: () => const SignUpScreen()),
           GetPage(name: AppRouts.home, page: () => const HomeScreen()),
         ]);
   }

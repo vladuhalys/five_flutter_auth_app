@@ -9,7 +9,7 @@ class AppTextFields extends StatelessWidget {
     button = const AppUserTextField();
   }
   AppTextFields.password({super.key}) {
-    button = Placeholder();
+    button = const AppPasswordTextField();
   }
   @override
   Widget build(BuildContext context) {

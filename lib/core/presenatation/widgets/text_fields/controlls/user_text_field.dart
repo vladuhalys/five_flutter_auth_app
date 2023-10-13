@@ -7,18 +7,11 @@ class AppUserTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: MediaQuery.of(context).size.width * 0.8,
+      height: 60,
+      width: MediaQuery.of(context).size.width - 64,
       child: TextField(
-        decoration: InputDecoration(
-            filled: true,
-            fillColor: AppColors.textFieldBackground,
-            border: const OutlineInputBorder(
-              borderRadius: BorderRadius.all(Radius.circular(10)),
-              borderSide: BorderSide.none,
-            ),
-            labelText: 'Username or Email',
-            labelStyle: AppTextStyle.labelText
-                .copyWith(color: AppColors.textFieldHint)),
+        keyboardType: TextInputType.emailAddress,
+        decoration: AppTextFieldsStyle.userInput,
       ),
     );
   }

@@ -13,7 +13,7 @@ class VideoStateController extends GetxController {
     try {
       super.onInit();
       _videoPlayerController =
-          VideoPlayerController.asset(AppAssetsVideo.splashEmptyVideo);
+          VideoPlayerController.asset(AppAssetsVideo.splashVideo);
       await _videoPlayerController.initialize();
       if (videoPlayerController.value.isInitialized) {
         _isVideoInit = 1;

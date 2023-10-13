@@ -35,6 +35,7 @@ flutter:
     - assets/icons/apple.svg
     - assets/icons/google.svg
     - assets/icons/eye.svg
+    - assets/icons/eye_close.svg
     - assets/icons/password.svg
     - assets/icons/user.svg
 

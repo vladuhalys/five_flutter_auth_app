@@ -7,6 +7,7 @@ abstract class AppAssetsImg {
   static const String apple = 'assets/icons/apple.svg';
   static const String google = 'assets/icons/google.svg';
   static const String eye = 'assets/icons/eye.svg';
+  static const String eyeClose = 'assets/icons/eye_close.svg';
   static const String password = 'assets/icons/password.svg';
   static const String user = 'assets/icons/user.svg';
 }
