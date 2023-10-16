@@ -14,12 +14,14 @@ class SignInWithButtons extends StatelessWidget {
           children: [
             AppText.signInWith(text: AppLabels.signInWith),
             const SizedBox(height: 20),
-            Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+            Row(mainAxisAlignment: MainAxisAlignment.center, children: [
               AppButton.circleFletDark(
                 onPressed: () {},
                 child: AppIcons.facebook,
               ),
+              const SizedBox(width: 20),
               AppButton.circleFletDark(onPressed: () {}, child: AppIcons.apple),
+              const SizedBox(width: 20),
               AppButton.circleFletDark(
                   onPressed: () {}, child: AppIcons.google),
             ]),

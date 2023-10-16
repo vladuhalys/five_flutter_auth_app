@@ -11,6 +11,9 @@ class AppTextFields extends StatelessWidget {
   AppTextFields.password({super.key}) {
     button = const AppPasswordTextField();
   }
+  AppTextFields.confirmPassword({super.key}) {
+    button = const AppConfirmPasswordTextField();
+  }
   @override
   Widget build(BuildContext context) {
     return button;

@@ -29,4 +29,6 @@ abstract class AppTextFieldsStyle {
         child: AppIcons.eye,
       ),
       labelText: AppTextFieldLabels.password);
+  static final confirmPasswordInput =
+      passwordInput.copyWith(labelText: AppTextFieldLabels.confirmPassword);
 }

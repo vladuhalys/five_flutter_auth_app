@@ -12,6 +12,6 @@ abstract class AppLabels {
 }
 
 abstract class AppHeaders {
-  static const welcome = 'Welcome\nBack!';
-  static const createAnAccount = 'Create an\naccount';
+  static const welcome = 'Welcome\n Back!';
+  static const createAnAccount = 'Create\nan naccount';
 }

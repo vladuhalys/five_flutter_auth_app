@@ -1,4 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:five_flutter_auth_app/core/internal/internal_exports.dart';
 import 'package:get/get.dart';
 
 class FirebaseServiceGetX extends GetConnect {
@@ -8,9 +9,9 @@ class FirebaseServiceGetX extends GetConnect {
   void onInit() {
     firebaseAuth.value.userChanges().listen((User? user) {
       if (user == null) {
-        Get.offAllNamed('/signin');
+        Get.offAllNamed(AppRouts.signIn);
       } else {
-        Get.offAllNamed('/home');
+        Get.offAllNamed(AppRouts.home);
       }
     });
   }

@@ -7,11 +7,8 @@ class SignInUpText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 30.0, left: 30.0),
-      child: Row(children: [
-        AppText.appTextScreenHeader(text: text),
-      ]),
-    );
+    return Row(children: [
+      AppText.appTextScreenHeader(text: text),
+    ]);
   }
 }

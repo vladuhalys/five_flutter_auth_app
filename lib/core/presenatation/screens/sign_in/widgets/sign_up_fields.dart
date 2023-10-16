@@ -14,6 +14,8 @@ class SignUpFields extends StatelessWidget {
         AppTextFields.user(),
         const SizedBox(height: 31),
         AppTextFields.password(),
+        const SizedBox(height: 31),
+        AppTextFields.confirmPassword(),
         const SizedBox(height: 10),
         Align(
           alignment: Alignment.centerRight,
