@@ -24,10 +24,7 @@ abstract class AppTextFieldsStyle {
         padding: const EdgeInsets.all(15),
         child: AppIcons.password,
       ),
-      suffixIcon: Padding(
-        padding: const EdgeInsets.all(10),
-        child: AppIcons.eye,
-      ),
+      suffixIcon: AppIcons.eye,
       labelText: AppTextFieldLabels.password);
   static final confirmPasswordInput =
       passwordInput.copyWith(labelText: AppTextFieldLabels.confirmPassword);

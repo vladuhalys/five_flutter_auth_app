@@ -6,13 +6,9 @@ class AppConfirmPasswordTextField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 60,
-      width: MediaQuery.of(context).size.width - 64,
-      child: TextField(
-        obscureText: true,
-        decoration: AppTextFieldsStyle.confirmPasswordInput,
-      ),
+    return TextFormField(
+      obscureText: true,
+      decoration: AppTextFieldsStyle.confirmPasswordInput,
     );
   }
 }

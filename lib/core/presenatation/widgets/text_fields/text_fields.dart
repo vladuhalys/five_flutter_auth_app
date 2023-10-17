@@ -9,7 +9,7 @@ class AppTextFields extends StatelessWidget {
     button = const AppUserTextField();
   }
   AppTextFields.password({super.key}) {
-    button = const AppPasswordTextField();
+    button = AppPasswordTextField();
   }
   AppTextFields.confirmPassword({super.key}) {
     button = const AppConfirmPasswordTextField();

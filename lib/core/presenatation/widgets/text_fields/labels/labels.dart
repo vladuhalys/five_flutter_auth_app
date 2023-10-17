@@ -15,3 +15,10 @@ abstract class AppHeaders {
   static const welcome = 'Welcome\n Back!';
   static const createAnAccount = 'Create\nan naccount';
 }
+
+abstract class AppErrors {
+  static const nickname = 'Please enter a valid nickname';
+  static const email = 'Please enter a valid email address';
+  static const password = 'Please enter a valid password';
+  static const confirmPassword = 'Passwords do not match';
+}

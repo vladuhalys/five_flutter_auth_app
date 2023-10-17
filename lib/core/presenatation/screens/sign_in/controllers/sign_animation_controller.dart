@@ -20,7 +20,7 @@ class SignAnimation extends GetxController
       2,
       (index) => Tween<Offset>(
         begin: const Offset(0.0, 0.0),
-        end: Offset(index == 0 ? 3.3 : -0.75, 0.0),
+        end: Offset(index == 0 ? 3.2 : -0.65, 0.0),
       ).animate(CurvedAnimation(
         parent: _controller.value,
         curve: Curves.elasticInOut,

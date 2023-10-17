@@ -20,7 +20,7 @@ class Application extends StatelessWidget {
         initialRoute: AppRouts.splash,
         getPages: [
           GetPage(name: AppRouts.splash, page: () => const SplashScreen()),
-          GetPage(name: AppRouts.signIn, page: () => const SignInScreen()),
+          GetPage(name: AppRouts.signIn, page: () => SignInScreen()),
           GetPage(name: AppRouts.home, page: () => const HomeScreen()),
         ]);
   }
