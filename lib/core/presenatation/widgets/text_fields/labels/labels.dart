@@ -22,3 +22,14 @@ abstract class AppErrors {
   static const password = 'Please enter a valid password';
   static const confirmPassword = 'Passwords do not match';
 }
+
+abstract class AppPasswordError {
+  static const length = 'Password must be at least 8 characters';
+  static const lowercase =
+      'Password must contain at least one lowercase letter';
+  static const uppercase =
+      'Password must contain at least one uppercase letter';
+  static const digit = 'Password must contain at least one digit';
+  static const specialSymbol =
+      'Password must contain at least one special symbol';
+}

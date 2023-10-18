@@ -1,21 +1,29 @@
-import 'package:five_flutter_auth_app/core/presenatation/widgets/text_fields/models/email_valid.dart';
-import 'package:five_flutter_auth_app/core/presenatation/widgets/text_fields/models/nickname_valid.dart';
-import 'package:five_flutter_auth_app/core/presenatation/widgets/text_fields/models/password_valid.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../models/models_exports.dart';
+
 class GetXValidation extends GetxController {
   final formKey = GlobalKey<FormState>().obs;
-  late NicknameValid nicknameValid;
-  late EmailValid emailValid;
-  late PasswordValid passwordValid;
+  final NicknameValid nicknameValid = NicknameValid();
+  final EmailValid emailValid = EmailValid();
+  final PasswordValid passwordValid = PasswordValid();
+  final ConfirmPasswordValid confirmPasswordValid = ConfirmPasswordValid();
+
+  late Rx<FocusNode> focusNodeEmailNick;
+  late Rx<FocusNode> focusNodePassword;
+  late Rx<FocusNode> focusNodeConfirmPassword;
+
+  final Rx<String?> nickname = "".obs;
+  final Rx<String?> email = "".obs;
+  final Rx<String?> password = "".obs;
 
   @override
   Future<void> onInit() async {
     super.onInit();
-    nicknameValid = NicknameValid();
-    emailValid = EmailValid();
-    passwordValid = PasswordValid();
+    focusNodeEmailNick = FocusNode().obs;
+    focusNodePassword = FocusNode().obs;
+    focusNodeConfirmPassword = FocusNode().obs;
   }
 
   @override

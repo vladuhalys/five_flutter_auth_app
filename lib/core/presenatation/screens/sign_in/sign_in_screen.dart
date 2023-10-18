@@ -49,7 +49,7 @@ class SignInScreen extends StatelessWidget {
                           outgoingEffect:
                               WidgetTransitionEffects.outgoingSlideOutToRight(),
                           child: const SignUpFields()),
-                  const SignInButtonLine(),
+                  const SignInButtonRow(),
                   const SignInWithButtons(),
                 ],
               ),

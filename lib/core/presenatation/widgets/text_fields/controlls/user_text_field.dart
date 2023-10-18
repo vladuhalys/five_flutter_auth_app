@@ -11,11 +11,24 @@ class AppUserTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetBuilder<GetXValidation>(builder: (controllerGetX) {
       return TextFormField(
+          onFieldSubmitted: (value) {
+            controllerGetX.focusNodePassword.value.requestFocus();
+          },
           validator: (value) {
             if (value?.isEmpty == true) {
-              return "Please enter your email";
-            } else if (!controllerGetX.emailValid.isValid(value)) {
-              return controllerGetX.emailValid.getError();
+              return "Please enter your email or username";
+            } else {
+              if (value?.contains("@") == true) {
+                controllerGetX.email.value = value;
+                if (!controllerGetX.emailValid.isValid(value)) {
+                  return controllerGetX.emailValid.getError();
+                }
+              } else {
+                controllerGetX.nickname.value = value;
+                if (!controllerGetX.nicknameValid.isValid(value)) {
+                  return controllerGetX.nicknameValid.getError();
+                }
+              }
             }
             return null;
           },

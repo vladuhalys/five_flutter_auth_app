@@ -13,12 +13,19 @@ class AppPasswordTextField extends StatelessWidget {
     return GetBuilder<EyeIconsController>(builder: (passwordVision) {
       return GetBuilder<GetXValidation>(builder: (controllerGetX) {
         return TextFormField(
+          focusNode: controllerGetX.focusNodePassword.value,
+          onFieldSubmitted: (value) {
+            controllerGetX.focusNodeConfirmPassword.value.requestFocus();
+            controllerGetX.password.value = value;
+          },
           validator: (value) {
+            controllerGetX.password.value = value;
             if (value?.isEmpty == true) {
               return "Please enter your password";
             } else if (!controllerGetX.passwordValid.isValid(value)) {
               return controllerGetX.passwordValid.getError();
             }
+
             return null;
           },
           style: AppTextStyle.labelText.copyWith(color: Colors.white),

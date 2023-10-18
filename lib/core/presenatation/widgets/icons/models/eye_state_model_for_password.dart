@@ -5,8 +5,8 @@ import 'package:get/get.dart';
 
 import '../controllers/app_eye_icons_state_controller.dart';
 
-class EyeStateModel extends StatelessWidget {
-  const EyeStateModel({super.key});
+class EyeStateModelForPassword extends StatelessWidget {
+  const EyeStateModelForPassword({super.key});
 
   @override
   Widget build(BuildContext context) {

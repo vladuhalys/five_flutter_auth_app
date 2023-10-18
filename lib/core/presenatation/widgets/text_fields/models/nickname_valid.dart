@@ -3,7 +3,7 @@ import 'package:five_flutter_auth_app/core/presenatation/presentation_exports.da
 class NicknameValid extends AbstractValid {
   @override
   String? getError() {
-    throw AppErrors.nickname;
+    return AppErrors.nickname;
   }
 
   @override

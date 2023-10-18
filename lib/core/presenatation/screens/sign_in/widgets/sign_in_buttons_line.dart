@@ -7,8 +7,8 @@ import 'package:get/get.dart';
 import '../../../../internal/routs/app_routs.dart';
 import '../controllers/sign_animation_controller.dart';
 
-class SignInButtonLine extends StatelessWidget {
-  const SignInButtonLine({super.key});
+class SignInButtonRow extends StatelessWidget {
+  const SignInButtonRow({super.key});
 
   void login() {
     Get.offAndToNamed(AppRouts.home);

@@ -20,12 +20,16 @@ abstract class AppTextFieldsStyle {
           AppTextStyle.labelText.copyWith(color: AppColors.textFieldHint));
 
   static final passwordInput = userInput.copyWith(
+      errorMaxLines: 6,
       prefixIcon: Padding(
         padding: const EdgeInsets.all(15),
         child: AppIcons.password,
       ),
-      suffixIcon: AppIcons.eye,
+      suffixIcon: AppIcons.eyePassword,
       labelText: AppTextFieldLabels.password);
-  static final confirmPasswordInput =
-      passwordInput.copyWith(labelText: AppTextFieldLabels.confirmPassword);
+  static final confirmPasswordInput = passwordInput.copyWith(
+    errorMaxLines: 6,
+    labelText: AppTextFieldLabels.confirmPassword,
+    suffixIcon: AppIcons.eyeConfirm,
+  );
 }
